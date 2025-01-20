@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo design.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to VisualCrafts</h1>
+            <p>Your premier destination for showcasing professionally edited images and creative digital art.</p>
+            <p>Discover, admire, and share a world of captivating visuals that redefine moments through the lens of artistry.</p>
+            <button onclick="window.location.href='#services'">Explore the Gallery</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>VisualCrafts is your premier destination for showcasing and sharing professionally edited images. Our mission is to blend creativity and technology, presenting a platform that highlights the artistry of digital edits.</p>
+        <iframe src="https://www.youtube.com/embed/a3aPaTNV5g4" title="Digital Art Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+    <section id="services">
+        <h2>Our Gallery</h2>
+        <p>Browse through our curated collection of edited images that showcase the unique touch of creativity and digital art. Each piece tells a story and reflects the artful process behind turning ordinary images into extraordinary visuals.</p>
+        <div class="gallery">
+            <div class="card">
+                <img src="images/boat-7767575_1280.jpg" alt="Image 1">
+            </div>
+            <div class="card">
+                <img src="images/spoonbill-9181508_1280.jpg" alt="Image 2">
+            </div>
+            <div class="card">
+                <img src="images/woman-6672896_1280.jpg" alt="Image 3">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+        <p>Interested in sharing your own work? Join our community and showcase your edits in VisualCrafts’ gallery. Connect with like-minded enthusiasts and let your creativity shine.</p>
+    </section>
+
+    <section id="contact-page">
+        <h1>Contact Us</h1>
+        <p>We're here to help and answer any question you might have. We look forward to hearing from you 🙂</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="images/phone-icon.png" alt="Phone Icon">
+                <h2>Call Us</h2>
+                <p>+254 456 7890</p>x
+            </div>
+            <div class="contact-item">
+                <img src="images/email-icon.png" alt="Email Icon">
+                <h2>Email Us</h2>
+                <p><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="images/location-icon.png" alt="Location Icon">
+                <h2>Visit Us</h2>
+                <p>po.box.40,<br> litein Town, Kericho</p>
+            </div>
+        </div>
+        <div class="contact-buttons">
+            <button onclick="window.location.href='tel:+2544567890'">Call Now</button>
+            <button onclick="window.location.href='mailto:info@yourcompany.com'">Send an Email</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Created by Debra [INTE/MG/1933/09/21] &copy; 2024 VisualCrafts. All Rights Reserved.</p>
+    </footer>
+        <script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Validate form fields
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (name.trim() !== '' && email.trim() !== '' && message.trim() !== '') {
+        // Assuming validation passes, redirect to the home page
+        window.location.href = '#home';
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
+    </script>
+</body>
+</html>
